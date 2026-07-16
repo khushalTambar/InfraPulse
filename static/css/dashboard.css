@@ -1,0 +1,251 @@
+.dashboard-wrapper{
+
+display:flex;
+
+background:#0f172a;
+
+min-height:100vh;
+
+}
+
+/* Sidebar */
+
+.sidebar{
+
+width:250px;
+
+background:#111827;
+
+padding:25px;
+
+position:fixed;
+
+height:100vh;
+
+}
+
+.logo{
+
+margin-bottom:40px;
+
+font-weight:bold;
+
+}
+
+.logo h3{
+
+color:white;
+
+}
+
+.sidebar ul{
+
+padding:0;
+
+list-style:none;
+
+}
+
+.sidebar li{
+
+margin:12px 0;
+
+}
+
+.sidebar a{
+
+color:#cbd5e1;
+
+text-decoration:none;
+
+display:block;
+
+padding:12px 15px;
+
+border-radius:10px;
+
+transition:.3s;
+
+font-weight:500;
+
+}
+
+.sidebar a:hover{
+
+background:#2563eb;
+
+color:white;
+
+}
+
+.sidebar i{
+
+margin-right:10px;
+
+}
+
+/* Main */
+
+.main-content{
+
+margin-left:250px;
+
+width:100%;
+
+}
+
+/* Navbar */
+
+.topbar{
+
+height:80px;
+
+background:#111827;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 30px;
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.top-icons{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+font-size:22px;
+
+color:white;
+
+}
+
+.avatar{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+}
+
+/* Cards */
+
+.dashboard-card{
+
+background:#1e293b;
+
+border:none;
+
+border-radius:18px;
+
+color:white;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.dashboard-card .card-header{
+
+background:transparent;
+
+font-weight:600;
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+/* Stat */
+
+.stat-box{
+
+background:#1e293b;
+
+padding:25px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.3s;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-6px);
+
+}
+
+.stat-box i{
+
+font-size:34px;
+
+margin-bottom:15px;
+
+display:block;
+
+}
+
+.stat-box h3{
+
+font-weight:700;
+
+font-size:34px;
+
+}
+
+.stat-box p{
+
+margin:0;
+
+color:#94a3b8;
+
+}
+
+/* Table */
+
+.table{
+
+margin:0;
+
+}
+
+.table td,
+
+.table th{
+
+padding:18px;
+
+vertical-align:middle;
+
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.sidebar{
+
+display:none;
+
+}
+
+.main-content{
+
+margin-left:0;
+
+}
+
+}

@@ -1,0 +1,32 @@
+<nav class="topbar">
+
+    <div>
+
+        <h4 class="fw-bold mb-0">
+
+            Welcome,
+            {{ request.user.username }}
+
+        </h4>
+
+        <small class="text-secondary">
+
+            Infrastructure Monitoring Dashboard
+
+        </small>
+
+    </div>
+
+    <div class="top-icons">
+
+        <i class="bi bi-search"></i>
+
+        <i class="bi bi-bell"></i>
+
+        <img
+        src="https://ui-avatars.com/api/?name={{request.user.username}}&background=3b82f6&color=fff"
+        class="avatar">
+
+    </div>
+
+</nav>
