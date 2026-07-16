@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}InfraPulse{% endblock %}</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {% block css %}{% endblock %}
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark py-3">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold fs-3" href="/">⚡ InfraPulse</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto align-items-center">
+
+<li class="nav-item">
+
+<a class="nav-link" href="/">Home</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#">Features</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#">Pricing</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="btn btn-primary ms-3 px-4 rounded-pill" href="#">Login</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="mt-5 py-5">
+
+<div class="container text-center">
+
+<p class="text-secondary">
+
+© 2026 InfraPulse • Built with Django ❤️
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+{% block js %}{% endblock %}
+
+</body>
+
+</html>
